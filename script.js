@@ -24,10 +24,12 @@ function get(currentTower) {
   ultimoElemento = currentTower.lastElementChild;
   ultimoPai = currentTower;
 
+
   if (ultimoElemento !== null) {
     ultimoElemento.style.backgroundColor = "green";
     stage = 1;
   }
+  
 }
 
 function drop(currentTower) {
@@ -47,11 +49,13 @@ function drop(currentTower) {
   }
   vitoria()
   stage = null;
+ 
 }
 
 function vitoria () {
-  if (thirdTower.childElementCount === 3) {
-    alert("voce ganhou")
+  if (thirdTower.childElementCount === 4) {
+    document.getElementById("vitoria").classList.remove("hidden")
+    
   }
 }
 

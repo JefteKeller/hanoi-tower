@@ -42,3 +42,7 @@ header h1 {
   text-align: center;
   margin-top: 8rem;
 }
+
+.hidden {
+   visibility: hidden;  
+}
