@@ -1,6 +1,25 @@
-section {
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ranchers', cursive;
+
+}
+
+header h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 50px;
+  margin-top: 1rem;
+  
+}
+
+#game {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 5rem;
 }
 
 #firstTower, #secondTower, #thirdTower{
@@ -15,4 +34,11 @@ section {
 #disk1, #disk2, #disk3 {
   border: 1px solid;
   padding: 0 2rem;
+}
+
+
+#vitoria {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 8rem;
 }
