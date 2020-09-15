@@ -1,0 +1,18 @@
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#firstTower, #secondTower, #thirdTower{
+  display: flex; 
+  flex-direction: column-reverse; 
+  align-items: center;
+  padding: 3rem 2rem;
+  border: 1px solid;
+  line-height: 5rem;
+}
+
+#disk1, #disk2, #disk3 {
+  border: 1px solid;
+  padding: 0 2rem;
+}
