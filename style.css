@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ranchers', cursive;
-
+  font-family: "Ranchers", cursive;
 }
+
+body {
+  background: linear-gradient(to right, #8ca6db, #b993d6);
+}
+
+/* HEADER */
 
 header h1 {
   text-align: center;
   letter-spacing: 2px;
   font-size: 50px;
   margin-top: 1rem;
-  
+  color: #001524;
 }
 
 #game {
@@ -22,27 +27,71 @@ header h1 {
   margin-top: 5rem;
 }
 
-#firstTower, #secondTower, #thirdTower{
-  display: flex; 
-  flex-direction: column-reverse; 
+/* TORRES */
+
+.towers:hover {
+  cursor: pointer;
+}
+
+.towers {
+  display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  padding: 3rem 2rem;
-  border: 1px solid;
+  padding: 0rem 0.7rem;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 2px solid;
   line-height: 5rem;
+  width: 1px;
+  height: 450px;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(to bottom, #000000, #434343); 
 }
 
-#disk1, #disk2, #disk3, #disk4 {
-  border: 1px solid;
+/* PECAS */
+
+.disks {
+  border: 2px solid black;
   padding: 0 2rem;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  height: 4rem;
 }
 
+#disk1 {
+  width: 410px;
+  background-color: #b74746;
+  color: #b74746;
+}
+
+#disk2 {
+  width: 340px;
+  background-color:#92b258;
+  color: #92b258;
+}
+
+#disk3 {
+  width: 270px;
+  background-color: #755995;
+  color: #755995;
+}
+
+#disk4 {
+  width: 200px;
+  background-color: #4576b2;
+  color: #4576b2;
+}
+
+/* VITORIA */
 
 #vitoria {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   margin-top: 8rem;
+  color: #001524;
 }
 
 .hidden {
-   visibility: hidden;  
+  visibility: hidden;
 }

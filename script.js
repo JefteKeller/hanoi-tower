@@ -24,16 +24,16 @@ function get(currentTower) {
   ultimoElemento = currentTower.lastElementChild;
   ultimoPai = currentTower;
 
-
   if (ultimoElemento !== null) {
     ultimoElemento.style.backgroundColor = "green";
+    ultimoElemento.style.color = "green";
     stage = 1;
   }
-  
 }
 
 function drop(currentTower) {
-  ultimoElemento.style.backgroundColor = "white";
+  ultimoElemento.style.backgroundColor = "";
+  ultimoElemento.style.color = "";
 
   if (currentTower.lastElementChild === null) {
     currentTower.appendChild(ultimoElemento);
@@ -45,17 +45,13 @@ function drop(currentTower) {
     currentTower.lastElementChild.textContent < ultimoElemento.textContent
   ) {
     ultimoPai.appendChild(ultimoElemento);
-
   }
-  vitoria()
+  vitoria();
   stage = null;
- 
 }
 
-function vitoria () {
+function vitoria() {
   if (thirdTower.childElementCount === 4) {
-    document.getElementById("vitoria").classList.remove("hidden")
-    
+    document.getElementById("vitoria").classList.remove("hidden");
   }
 }
-
