@@ -46,6 +46,7 @@ function reset() {
   firstTower.innerHTML = "";
   secondTower.innerHTML = "";
   thirdTower.innerHTML = "";
+  stage = 0
 
   document.getElementById("vitoria").classList.add("hidden");
 
